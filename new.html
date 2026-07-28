@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Active Chromewell Exhaust Pvt Ltd | Exhaust, Emissions &amp; Thermal Management Solutions</title>
+<meta name="description" content="Active Chromewell Exhaust Pvt Ltd — world-class exhaust, emissions and thermal management solutions for off-highway vehicles, equipment and stationary engines. ISO 9001 / TS16949 certified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --graphite:#12161a;
+  --steel:#1c242c;
+  --steel-2:#252f38;
+  --line-dark:#38434d;
+  --paper:#f1eee6;
+  --paper-2:#e7e2d4;
+  --ink:#181c20;
+  --ink-soft:#525b62;
+  --ember:#2F3C64;
+  --ember-2:#86B832;
+  --blue:#4fa6c9;
+  --blue-2:#2c7794;
+  --white:#ffffff;
+  --radius:2px;
+  --display: 'Oswald', sans-serif;
+  --body: 'Inter', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--body);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{display:block; max-width:100%;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+section{position:relative;}
+.wrap{max-width:1240px; margin:0 auto; padding:0 32px;}
+@media (max-width:640px){.wrap{padding:0 20px;}}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ember);
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:18px;
+}
+.eyebrow::before{content:""; width:26px; height:1px; background:var(--ember);}
+.eyebrow.on-dark{color:var(--ember-2);}
+
+h1,h2,h3,h4{
+  font-family:var(--display);
+  text-transform:uppercase;
+  letter-spacing:.01em;
+  font-weight:600;
+  color:var(--ink);
+  line-height:1.08;
+}
+.on-dark h1, .on-dark h2, .on-dark h3, .on-dark h4, .on-dark p, .on-dark li, .on-dark span{color:var(--white);}
+
+h2{font-size:clamp(30px,4vw,46px); margin-bottom:18px;}
+h3{font-size:20px; letter-spacing:.03em;}
+
+p{color:var(--ink-soft); max-width:62ch;}
+.on-dark p{color:#c3ccd2;}
+
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:var(--mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+  padding:15px 26px;
+  border:1px solid var(--ink);
+  color:var(--ink);
+  transition:.25s ease;
+  cursor:pointer;
+  background:transparent;
+}
+.btn:hover{background:var(--ink); color:var(--paper);}
+.btn.solid{background:var(--ember); border-color:var(--ember); color:var(--white);}
+.btn.solid:hover{background:var(--ember-2); border-color:var(--ember-2); color:var(--graphite);}
+.btn.ghost-light{border-color:rgba(255,255,255,.4); color:#fff;}
+.btn.ghost-light:hover{background:#fff; color:var(--graphite);}
+.btn svg{width:14px; height:14px;}
+
+/* ============ NAV ============ */
+header.site-nav{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(18,22,26,.82);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  transition:.3s ease;
+}
+.nav-inner{
+  max-width:1240px; margin:0 auto; padding:16px 32px;
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+}
+.brand{display:flex; align-items:center; gap:12px;}
+.brand-mark{
+  width:38px; height:38px; flex:none;
+}
+.brand-text{display:flex; flex-direction:column; line-height:1.1;}
+.brand-text b{
+  font-family:var(--display); font-size:16px; letter-spacing:.04em; color:#fff; text-transform:uppercase;
+}
+.brand-text span{
+  font-family:var(--mono); font-size:10px; letter-spacing:.12em; color:var(--ember-2); text-transform:uppercase;
+}
+nav.links{display:flex; gap:30px;}
+nav.links a{
+  font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+  color:#c3ccd2; position:relative; padding:4px 0;
+}
+nav.links a::after{
+  content:""; position:absolute; bottom:0; left:0; width:0; height:1px; background:var(--ember-2); transition:.25s;
+}
+nav.links a:hover{color:#fff;}
+nav.links a:hover::after{width:100%;}
+.nav-cta{
+  font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--graphite); background:var(--ember-2); padding:11px 18px; border:1px solid var(--ember-2);
+  white-space:nowrap;
+}
+.nav-cta:hover{background:transparent; color:var(--ember-2);}
+.burger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none;}
+.burger span{width:24px; height:2px; background:#fff;}
+@media (max-width:920px){
+  nav.links{display:none;}
+  .nav-cta{display:none;}
+  .burger{display:flex;}
+}
+
+/* ============ HERO / VIDEO BANNER ============ */
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:flex; align-items:flex-end;
+  background:var(--graphite);
+  overflow:hidden;
+  padding-top:90px;
+}
+.hero-motion{position:absolute; inset:0; z-index:0;}
+.hero-motion .base{
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 90% 60% at 80% 10%, rgba(230,74,14,.20), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 10% 100%, rgba(79,166,201,.14), transparent 60%),
+    linear-gradient(180deg,#0d1114 0%, #12161a 50%, #171d22 100%);
+}
+.hero-motion .grid{
+  position:absolute; inset:0; opacity:.35;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse 70% 70% at 60% 40%, black 20%, transparent 80%);
+}
+.scan-bar{
+  position:absolute; left:0; right:0; height:180px;
+  background:linear-gradient(180deg, transparent, rgba(255,146,72,.16), transparent);
+  animation:scan 7s linear infinite;
+  filter:blur(6px);
+}
+@keyframes scan{
+  0%{top:-200px;} 100%{top:110%;}
+}
+.pipe-svg{position:absolute; right:-6%; top:14%; width:64%; max-width:760px; opacity:.9;}
+@media (max-width:920px){.pipe-svg{right:-30%; top:8%; width:100%; opacity:.55;}}
+.pipe-svg .flow{
+  stroke-dasharray:10 14;
+  animation:flow 2.4s linear infinite;
+}
+@keyframes flow{ to{ stroke-dashoffset:-240; } }
+.spark{
+  position:absolute; width:3px; height:3px; border-radius:50%;
+  background:var(--ember-2); box-shadow:0 0 8px 2px rgba(255,146,72,.9);
+  animation:rise linear infinite;
+}
+@keyframes rise{
+  0%{ transform:translateY(0) translateX(0); opacity:0;}
+  10%{opacity:1;}
+  100%{ transform:translateY(-420px) translateX(var(--drift,20px)); opacity:0;}
+}
+
+.hero-content{position:relative; z-index:2; width:100%; padding-bottom:74px;}
+.hero-grid{
+  display:grid; grid-template-columns:1.5fr .9fr; gap:60px; align-items:end;
+}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr;}}
+.hero-tag{
+  font-family:var(--mono); color:var(--ember-2); font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+  display:flex; align-items:center; gap:10px; margin-bottom:22px;
+}
+.hero-tag::before{content:""; width:8px; height:8px; background:var(--ember); border-radius:50%; box-shadow:0 0 10px 2px rgba(230,74,14,.8); animation:pulse 1.8s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;} 50%{opacity:.3;}}
+.hero-content h1{
+  color:#fff; font-size:clamp(38px,6.4vw,84px); line-height:.98; letter-spacing:0; margin-bottom:22px;
+}
+.hero-content h1 em{font-style:normal; color:var(--ember-2);}
+.hero-content p.lede{color:#c3ccd2; font-size:17px; max-width:52ch; margin-bottom:34px;}
+.hero-cta{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:52px;}
+.hero-specs{
+  border-left:1px solid rgba(255,255,255,.18); padding-left:28px;
+  display:flex; flex-direction:column; gap:18px;
+}
+.hero-specs .row{display:flex; justify-content:space-between; gap:20px; font-family:var(--mono); font-size:12px; color:#95a1a9; letter-spacing:.04em;}
+.hero-specs .row b{color:#fff; font-family:var(--body); font-weight:600; font-size:14px;}
+.badges{display:flex; gap:10px; flex-wrap:wrap; margin-top:36px;}
+.badge{
+  font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:#dfe4e7;
+  border:1px solid rgba(255,255,255,.22); padding:7px 12px; text-transform:uppercase;
+}
+.scroll-cue{
+  position:absolute; right:32px; bottom:26px; z-index:2;
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+  font-family:var(--mono); font-size:10px; color:#8b969d; letter-spacing:.1em; text-transform:uppercase;
+}
+.scroll-cue .line{width:1px; height:44px; background:linear-gradient(#8b969d, transparent); animation:cue 1.6s ease-in-out infinite;}
+@keyframes cue{0%{opacity:.2;} 50%{opacity:1;} 100%{opacity:.2;}}
+@media (max-width:640px){.scroll-cue{display:none;}}
+
+/* ============ SECTION FRAMES ============ */
+.section{padding:110px 0;}
+.section.dark{background:var(--graphite);}
+.section.steel{background:var(--steel);}
+.section.tight{padding:90px 0;}
+.divider-line{height:1px; background:linear-gradient(90deg, var(--line-dark), transparent);}
+.head-row{
+  display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:56px; flex-wrap:wrap;
+}
+.head-row p{margin-top:6px;}
+.doc-tag{font-family:var(--mono); font-size:12px; color:var(--blue-2); letter-spacing:.1em;}
+.on-dark .doc-tag{color:var(--blue);}
+
+/* ============ ABOUT ============ */
+.about-lead{display:grid; grid-template-columns:1fr 1fr; gap:60px; margin-bottom:70px;}
+@media (max-width:860px){.about-lead{grid-template-columns:1fr;}}
+.pillars{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-dark); border:1px solid var(--line-dark); margin-top:10px;}
+@media (max-width:760px){.pillars{grid-template-columns:1fr;}}
+.pillar{background:var(--paper); padding:28px 26px;}
+.pillar span.num{font-family:var(--mono); font-size:12px; color:var(--ember);}
+.pillar h4{font-size:16px; margin:12px 0 10px;}
+.pillar p{font-size:14px;}
+.pillar.values li{
+  font-family:var(--body); color:var(--ink-soft); font-size:14px; padding:6px 0 6px 18px; position:relative;
+}
+.pillar.values li::before{content:"—"; position:absolute; left:0; color:var(--ember);}
+
+.jv-grid{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line-dark); border:1px solid var(--line-dark); margin:70px 0;}
+@media (max-width:760px){.jv-grid{grid-template-columns:1fr;}}
+.jv-card{background:var(--paper); padding:38px;}
+.jv-card .jv-head{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;}
+.jv-card h3{font-size:22px;}
+.jv-card .tag{font-family:var(--mono); font-size:11px; color:var(--blue-2); border:1px solid var(--blue-2); padding:4px 8px;}
+.jv-card ul{margin:16px 0 20px; display:flex; flex-direction:column; gap:8px;}
+.jv-card li{font-size:14px; color:var(--ink-soft); padding-left:16px; position:relative;}
+.jv-card li::before{content:"›"; position:absolute; left:0; color:var(--ember);}
+.jv-card a.site{font-family:var(--mono); font-size:12px; color:var(--ember); border-bottom:1px solid var(--ember); padding-bottom:2px;}
+
+.directors{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-dark); border:1px solid var(--line-dark); margin-top:20px;}
+@media (max-width:860px){.directors{grid-template-columns:repeat(2,1fr);}}
+.director{background:var(--paper); padding:26px 22px;}
+.director .initials{
+  width:48px; height:48px; display:flex; align-items:center; justify-content:center;
+  font-family:var(--display); font-size:16px; color:#fff; background:var(--ink); margin-bottom:16px;
+}
+.director h4{font-size:15px; margin-bottom:4px;}
+.director span{font-family:var(--mono); font-size:11.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.04em;}
+
+.global-strip{
+  margin-top:80px; padding:44px; background:var(--ink); color:#fff;
+  display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center;
+}
+@media (max-width:820px){.global-strip{grid-template-columns:1fr;}}
+.global-strip h3{color:#fff; font-size:22px; margin-bottom:12px;}
+.global-strip p{color:#c3ccd2;}
+.locations-row{display:flex; gap:26px; flex-wrap:wrap;}
+.locations-row div{font-family:var(--mono); font-size:12px; color:#fff; border:1px solid rgba(255,255,255,.25); padding:14px 16px; flex:1; min-width:120px; text-align:center;}
+.locations-row div small{display:block; color:#8b969d; margin-top:6px; font-size:10px; letter-spacing:.08em;}
+
+/* client marquee */
+.clients{margin-top:90px;}
+.clients .label{text-align:center; font-family:var(--mono); font-size:12px; letter-spacing:.14em; color:var(--ink-soft); text-transform:uppercase; margin-bottom:26px;}
+.marquee{overflow:hidden; border-top:1px solid var(--line-dark); border-bottom:1px solid var(--line-dark); padding:22px 0;}
+.marquee .track{display:flex; gap:60px; width:max-content; animation:scroll-left 32s linear infinite;}
+.marquee:hover .track{animation-play-state:paused;}
+@keyframes scroll-left{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+.marquee span{
+  font-family:var(--display); font-size:22px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-soft); white-space:nowrap;
+  display:flex; align-items:center; gap:12px;
+}
+.marquee span::before{content:""; width:6px; height:6px; background:var(--ember); border-radius:50%;}
+
+/* location map */
+.location-block{margin-top:90px; display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line-dark); border:1px solid var(--line-dark);}
+@media (max-width:860px){.location-block{grid-template-columns:1fr;}}
+.location-copy{background:var(--paper); padding:40px;}
+.location-map{background:var(--paper); min-height:320px;}
+.location-map iframe{width:100%; height:100%; min-height:320px; border:0; filter:grayscale(.3) contrast(1.05);}
+
+/* ============ PRODUCTS ============ */
+.product-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-dark); border:1px solid var(--line-dark);}
+@media (max-width:920px){.product-grid{grid-template-columns:1fr;}}
+.product-card{background:var(--steel); padding:40px 34px; position:relative; overflow:hidden;}
+.product-card .icon{width:52px; height:52px; margin-bottom:26px;}
+.product-card h3{font-size:20px; margin-bottom:14px;}
+.product-card p{font-size:14px; margin-bottom:20px;}
+.product-card ul{display:flex; flex-direction:column; gap:9px;}
+.product-card li{font-size:13.5px; color:#aab4bb; padding-left:16px; position:relative;}
+.product-card li::before{content:"·"; position:absolute; left:0; color:var(--ember-2); font-size:20px; line-height:0.6;}
+.product-card .tag{
+  position:absolute; top:24px; right:24px; font-family:var(--mono); font-size:10px; color:#6a757c; letter-spacing:.08em;
+}
+.product-lead{display:grid; grid-template-columns:1.1fr .9fr; gap:60px; margin-bottom:64px; align-items:start;}
+@media (max-width:860px){.product-lead{grid-template-columns:1fr;}}
+.spec-note{
+  border:1px solid var(--line-dark); padding:24px; font-family:var(--mono); font-size:12px; color:#aab4bb; line-height:1.9;
+}
+.spec-note b{color:#fff;}
+
+/* ============ MARKETS ============ */
+.market-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-dark); border:1px solid var(--line-dark); margin-top:56px;}
+@media (max-width:920px){.market-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.market-grid{grid-template-columns:1fr;}}
+.market-card{background:var(--paper); padding:32px 26px; min-height:250px; display:flex; flex-direction:column;}
+.market-card .num{font-family:var(--mono); font-size:12px; color:var(--ember); margin-bottom:20px;}
+.market-card .icon{width:40px; height:40px; margin-bottom:18px;}
+.market-card h4{font-size:16px; margin-bottom:14px;}
+.market-card ul{margin-top:auto; display:flex; flex-direction:column; gap:6px;}
+.market-card li{font-size:13px; color:var(--ink-soft); padding-left:14px; position:relative;}
+.market-card li::before{content:"—"; position:absolute; left:0; color:var(--blue-2);}
+.market-lede{max-width:760px;}
+
+/* ============ CAPABILITIES ============ */
+.cap-block{
+  display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; padding:60px 0; align-items:start;
+  border-top:1px solid var(--line-dark);
+}
+.cap-block:first-of-type{border-top:none;}
+@media (max-width:860px){.cap-block{grid-template-columns:1fr; gap:24px;}}
+.cap-block .cap-label{position:sticky; top:110px;}
+.cap-block .cap-label .doc-tag{margin-bottom:10px; display:block;}
+.cap-block h3{font-size:24px; margin-bottom:12px;}
+.cap-list{display:grid; grid-template-columns:1fr 1fr; gap:12px 28px;}
+@media (max-width:560px){.cap-list{grid-template-columns:1fr;}}
+.cap-list li{
+  font-size:14px; color:#c3ccd2; padding:10px 0 10px 20px; border-top:1px solid var(--line-dark); position:relative;
+}
+.cap-list li:nth-child(-n+2){border-top:none;}
+.cap-list li::before{content:""; position:absolute; left:0; top:16px; width:8px; height:1px; background:var(--ember-2);}
+.cap-list li b{color:#fff; font-weight:500;}
+.onestop{
+  margin-top:20px; display:inline-flex; align-items:center; gap:12px; font-family:var(--mono); font-size:12px;
+  color:var(--ember-2); border:1px dashed rgba(255,146,72,.5); padding:10px 16px; letter-spacing:.08em; text-transform:uppercase;
+}
+
+/* ============ POLICIES ============ */
+.policy-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line-dark); border:1px solid var(--line-dark);}
+@media (max-width:820px){.policy-grid{grid-template-columns:1fr;}}
+.policy-card{background:var(--paper); padding:36px;}
+.policy-card .doc-tag{display:block; margin-bottom:12px;}
+.policy-card h3{font-size:19px; margin-bottom:14px;}
+.policy-card p{font-size:14px;}
+.cert-row{display:flex; gap:14px; flex-wrap:wrap; margin-top:60px;}
+.cert-chip{
+  font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink);
+  border:1px solid var(--ink); padding:12px 20px; display:flex; align-items:center; gap:10px;
+}
+.cert-chip::before{content:"✓"; color:var(--ember);}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line-dark); border:1px solid var(--line-dark);}
+@media (max-width:920px){.contact-grid{grid-template-columns:1fr;}}
+.contact-info{background:var(--steel); padding:44px;}
+.contact-info .block{margin-bottom:30px;}
+.contact-info .doc-tag{display:block; margin-bottom:8px;}
+.contact-info h4{color:#fff; font-size:14px; margin-bottom:8px; text-transform:uppercase; letter-spacing:.04em;}
+.contact-info p{color:#c3ccd2; font-size:14px;}
+.contact-info a{color:var(--ember-2); font-family:var(--mono); font-size:14px;}
+.contact-form{background:var(--paper); padding:44px;}
+.form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
+@media (max-width:560px){.form-row{grid-template-columns:1fr;}}
+.field{display:flex; flex-direction:column; gap:8px; margin-bottom:16px;}
+.field label{font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft);}
+.field input, .field select, .field textarea{
+  border:1px solid var(--line-dark); background:transparent; padding:13px 14px; font-family:var(--body); font-size:14px; color:var(--ink);
+  border-radius:var(--radius); border-color:#c9c2ac;
+}
+.field textarea{resize:vertical; min-height:100px;}
+.field input:focus, .field select:focus, .field textarea:focus{outline:2px solid var(--ember); outline-offset:1px;}
+.form-note{font-family:var(--mono); font-size:11px; color:var(--ink-soft); margin-top:14px;}
+.form-status{font-family:var(--mono); font-size:12px; margin-top:14px; color:var(--blue-2); display:none;}
+
+/* ============ FOOTER ============ */
+footer{background:var(--graphite); padding:60px 0 26px;}
+.foot-top{display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,.1);}
+.foot-brand p{color:#8b969d; font-size:13px; max-width:34ch; margin-top:14px;}
+.foot-cols{display:flex; gap:60px; flex-wrap:wrap;}
+.foot-col h5{font-family:var(--mono); font-size:11px; letter-spacing:.1em; color:#6a757c; text-transform:uppercase; margin-bottom:16px;}
+.foot-col a, .foot-col span{display:block; font-size:13.5px; color:#c3ccd2; margin-bottom:10px;}
+.foot-col a:hover{color:var(--ember-2);}
+.foot-bottom{display:flex; justify-content:space-between; padding-top:24px; flex-wrap:wrap; gap:10px;}
+.foot-bottom span{font-family:var(--mono); font-size:11px; color:#6a757c;}
+
+/* reveal on scroll */
+.reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:translateY(0);}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001s !important; animation-iteration-count:1 !important; transition-duration:.001s !important;}
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Adjusts spacing between logo and text */
+}
+
+.brand-logo {
+  height: 48px; /* Matches the original SVG height */
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-text {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.brand-tagline {
+  height: 16px; /* Adjust based on your tagline image proportions */
+  width: auto;
+  margin-top: 4px; /* Space between brand name and tagline */
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+<img src="file/logo.png" alt="Active Chromewell Logo" class="brand-logo">
+      <!---<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+        <rect x="1" y="1" width="46" height="46" stroke="#ff9248" stroke-width="1.5"/>
+        <path d="M10 30 Q10 18 22 18 H30" stroke="#ff9248" stroke-width="2" fill="none"/>
+        <circle cx="34" cy="18" r="4" stroke="#ff9248" stroke-width="2" fill="none"/>
+        <path d="M10 30 L14 34 M10 30 L14 26" stroke="#4fa6c9" stroke-width="1.6"/>
+      </svg>
+      <span class="brand-text"><b>Active Chromewell</b><span>Exhaust Pvt Ltd</span></span>--->
+    </a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#markets">Markets</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#policies">Policies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <!---<a href="#contact" class="nav-cta">Request a Quote</a>--->
+    <button class="burger" aria-label="menu" onclick="document.querySelector('nav.links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO / VIDEO BANNER ============ -->
+<section class="hero" id="home">
+  <div class="hero-motion">
+    <div class="base"></div>
+    <div class="grid"></div>
+    <div class="scan-bar"></div>
+    <svg class="pipe-svg" viewBox="0 0 600 400" fill="none">
+      <path d="M40 320 C 120 320 140 260 220 260 L 420 260 C 470 260 470 200 520 200" stroke="#3a4652" stroke-width="26" stroke-linecap="round"/>
+      <path class="flow" d="M40 320 C 120 320 140 260 220 260 L 420 260 C 470 260 470 200 520 200" stroke="#ff9248" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+      <circle cx="520" cy="200" r="34" stroke="#4fa6c9" stroke-width="2" fill="none" opacity="0.6"/>
+      <circle cx="520" cy="200" r="20" stroke="#4fa6c9" stroke-width="1.4" fill="none" opacity="0.4"/>
+      <path d="M90 300 L 90 340" stroke="#3a4652" stroke-width="10"/>
+      <path d="M150 260 L 150 300" stroke="#3a4652" stroke-width="10"/>
+    </svg>
+    <div id="sparkfield"></div>
+  </div>
+
+  <div class="hero-content wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag">Sanaswadi, Pune · India / North America JV</div>
+        <h1>Engineered<br>to outlast <em style="color:#86B832;">the heat.</em></h1>
+        <p class="lede">Active Chromewell Exhaust is a world-class provider of exhaust and emissions solutions — acoustic, performance and thermal management technologies for off-highway vehicles, equipment applications and stationary engines.</p>
+        <div class="hero-cta">
+          <a href="#capabilities" class="btn solid">Explore Capabilities
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <!---<a href="#contact" class="btn ghost-light">Request a Quote</a>--->
+        </div>
+        <div class="badges">
+          <span class="badge">ISO 9001</span>
+          <span class="badge">TS 16949</span>
+          <span class="badge">JV Since 2013</span>
+          <span class="badge">50+ Yrs Combined Expertise</span>
+        </div>
+      </div>
+      <div class="hero-specs">
+        <div class="row"><span>Facilities</span><b>North America · India · China</b></div>
+        <div class="row"><span>Applications</span><b>5 – 700+ HP, Diesel &amp; SSI</b></div>
+        <div class="row"><span>Design library</span><b>1,200+ exhaust system designs</b></div>
+        <div class="row"><span>Port proximity</span><b>JNPT (Nhava Sheva)</b></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll<div class="line"></div></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div>
+        <span class="doc-tag">ABOUT US</span>
+        <h2>Two companies.<br>One exhaust system.</h2>
+      </div>
+      <p>We are world-class providers of exhaust and emission solutions — acoustic, performance and thermal management technologies for off-highway vehicles, equipment applications and stationary engines.</p>
+    </div>
+
+    <div class="pillars reveal">
+      <div class="pillar">
+        <span class="num">VISION</span>
+        <h4>Growth through innovation</h4>
+        <p>Growth through industry-leading innovation, quality and dedication to customer service.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">MISSION</span>
+        <h4>Best-in-class by design</h4>
+        <p>Innovative solutions in the manufacture of best-in-class exhaust systems, tubular products and fabricated metal products for OEMs.</p>
+      </div>
+      <div class="pillar values">
+        <span class="num">VALUES</span>
+        <h4>What we build on</h4>
+        <ul>
+          <li>Strive for excellence</li>
+          <li>Encourage ingenuity</li>
+          <li>Committed and responsive</li>
+          <li>Integrity and respect</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jv-grid reveal">
+      <div class="jv-card">
+        <div class="jv-head">
+          <h3>Active Exhaust<br>Corporation</h3>
+          <span class="tag">North America</span>
+        </div>
+        <p>Expertise in exhaust and thermal management systems, established 1958.</p>
+        <ul>
+          <li>Based in North America</li>
+          <li>Design, test and manufacturing capabilities</li>
+          <li>Broad global OEM base</li>
+          <li>ISO-9001 certified</li>
+        </ul>
+        <a class="site" href="https://www.activeexhaust.com/" target="_blank" rel="noopener">www.activeexhaust.com</a>
+      </div>
+      <div class="jv-card">
+        <div class="jv-head">
+          <h3>Chromewell<br>Engineering Ltd.</h3>
+          <span class="tag">India</span>
+        </div>
+        <p>Broad metal fabrication capabilities, established 1958.</p>
+        <ul>
+          <li>Based in India</li>
+          <li>Broad metal fabrication capabilities</li>
+          <li>OEM supplier, world-class manufacturing</li>
+          <li>TS16949 certified</li>
+        </ul>
+        <a class="site" href="https://www.chromewell.in/" target="_blank" rel="noopener">www.chromewell.in</a>
+      </div>
+    </div>
+
+    <div class="head-row reveal" style="margin-bottom:24px;">
+      <div>
+        <span class="doc-tag">LEADERSHIP</span>
+        <h2 style="font-size:28px;">Our Directors</h2>
+      </div>
+    </div>
+    <div class="directors reveal">
+      <div class="director"><div class="initials">PH</div><h4>Peter Hampton</h4><span>Finance &amp; Management</span></div>
+      <div class="director"><div class="initials">VK</div><h4>Vikas Kaushik</h4><span>Strategic Development</span></div>
+      <div class="director"><div class="initials">SK</div><h4>Sanjay Kapoor</h4><span>Production &amp; Technology</span></div>
+      <div class="director"><div class="initials">UK</div><h4>Uday Kapoor</h4><span>Finance &amp; Administration</span></div>
+    </div>
+
+    <div class="global-strip reveal">
+      <div>
+        <span class="doc-tag" style="color:#4fa6c9;">LOCAL PRESENCE, GLOBAL PERSPECTIVE</span>
+        <h3>Global Manufacturing</h3>
+        <p>ISO 9001 / TS 16949 / OEM-certified manufacturing facilities in North America, China and India, serving our global OEM customers in the most efficient manner possible.</p>
+      </div>
+      <div class="locations-row">
+        <div>North America<small>Design · Test · Mfg</small></div>
+        <div>India<small>Fabrication · Mfg</small></div>
+        <div>China<small>OEM Supply</small></div>
+      </div>
+    </div>
+
+    <div class="clients reveal">
+      <div class="label">Trusted by leading global OEMs</div>
+      <div class="marquee">
+        <div class="track" id="marquee-track"></div>
+      </div>
+    </div>
+
+    <div class="location-block reveal">
+      <div class="location-copy">
+        <span class="doc-tag">LOCATION</span>
+        <h3>Sanaswadi, Pune</h3>
+        <p>Strategically located in the Sanaswadi industrial area, close to Pune and Mumbai — with proximity to major customers and Jawaharlal Nehru Port (JNPT / Nhava Sheva), the largest container port in India.</p>
+      </div>
+      <div class="location-map">
+       
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.229091037372!2d74.10733302572318!3d18.684174851390466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2da08c4dbcf11%3A0x8bb4b49026127469!2sActive%20Chromewell%20Exhaust%20Pvt%20ltd!5e0!3m2!1sen!2sin!4v1783015477617!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section dark" id="products">
+  <div class="wrap">
+    <div class="product-lead reveal">
+      <div>
+        <span class="doc-tag" style="color:#86B832;">PRODUCTS</span>
+        <h2 style="color:#86B832;">Built for the<br>full exhaust path.</h2>
+        <p>At Active Chromewell Exhaust, we don't just offer individual products — we offer our customers an end-to-end solution. Our R&amp;D is derived from over 50 years of experience in innovative design, meticulous testing, tooling expertise and world-class manufacturing to meet the most stringent compliance regulations.</p>
+      </div>
+      <div class="spec-note">
+        <b>DESIGN RANGE</b><br>
+        Standard round mufflers · unique clamshell designs · spark arrestors · formed tubing · custom off-road exhaust solutions — flexed to the specific needs of a wide variety of off-road market customers.
+      </div>
+    </div>
+
+    <div class="product-grid reveal">
+      <div class="product-card">
+        <span class="tag" style="color:#86B832;">MUFFLERS</span>
+<img src="file/Mufflers.png" alt="Active Chromewell Logo" class="brand-logo">
+        <!--<svg class="icon" viewBox="0 0 48 48" fill="none"><rect x="6" y="18" width="20" height="12" rx="2" stroke="#ff9248" stroke-width="2"/><path d="M26 24H40" stroke="#4fa6c9" stroke-width="2"/><path d="M6 22V26M12 22V26M18 22V26" stroke="#ff9248" stroke-width="1.4"/></svg>--->
+
+        <h3 style="color:#86B832;">Mufflers</h3>
+        <p>Acoustic and performance-tuned mufflers engineered for demanding duty cycles.</p>
+        <ul>
+          <li>Standard round designs</li>
+          <li>Unique clamshell geometry</li>
+          <li>USDA spark arrestor technology</li>
+          <li>Sound &amp; performance optimized</li>
+        </ul>
+      </div>
+      <div class="product-card">
+        <span class="tag" style="color:#86B832;">TUBES</span>
+        <img src="file/tube.png" alt="Active Chromewell Logo" class="brand-logo">
+        <h3 style="color:#86B832;">Exhaust Tubes</h3>
+        <p>Formed tubing engineered to precise bend geometry for complex packaging.</p>
+        <ul>
+          <li>CNC &amp; NC tube bending</li>
+          <li>Double-wall, insulated tubing</li>
+          <li>CAC &amp; air intake tubing</li>
+          <li>Tight-tolerance forming</li>
+        </ul>
+      </div>
+      <div class="product-card">
+        <span class="tag" style="color:#86B832;">HEAT SHIELDS</span>
+        <img src="file/heat.png" alt="Active Chromewell Logo" class="brand-logo">
+        <h3 style="color:#86B832;">Heat Shields &amp; Covers</h3>
+        <p>High-temperature shielding for surface protection and thermal isolation.</p>
+        <ul>
+          <li>Multi-layer thermal barriers</li>
+          <li>Custom fabricated covers</li>
+          <li>Device interface solutions</li>
+          <li>High-temp powder coat finish</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARKETS ============ -->
+<section class="section" id="markets">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div>
+        <span class="doc-tag">MARKETS</span>
+        <h2>Purpose-built<br>for every market.</h2>
+      </div>
+      <p class="market-lede">Whether it's cutting, bending, shaping, reducing emissions, controlling sound or standing up to difficult climates — our engineering and manufacturing teams work together to optimize performance across the global markets we serve.</p>
+    </div>
+    <p class="reveal" style="margin-bottom:10px; max-width:80ch;">Whether you're using heavy equipment for agriculture in India, providing golf carts to customers in Asia, running winter power-sports equipment in North America, or industrial solutions that pump life into your equipment — we design and construct purpose-built solutions for your specific market needs.</p>
+
+    <div class="market-grid reveal">
+      <div class="market-card">
+       
+        <img src="file/v3.png" alt="Active Chromewell Logo" class="brand-logo">
+        <h4>Heavy Equipment</h4>
+        <ul>
+          <li>Agriculture — Tractors to Harvesters</li>
+          <li>Construction — Skid Steers to Dozers</li>
+          <li>Forestry — Skidders to Feller Bunchers</li>
+        </ul>
+      </div>
+      <div class="market-card">
+       
+        <img src="file/v9.png" alt="Active Chromewell Logo" class="brand-logo">
+        <h4>Small Engines</h4>
+        <ul>
+          <li>Lawn</li>
+          <li>Garden</li>
+          <li>Turf Care</li>
+          <li>Golf</li>
+        </ul>
+      </div>
+      <div class="market-card">
+       
+        <img src="file/v1.png" alt="Active Chromewell Logo" class="brand-logo">
+        <h4>Power Sports</h4>
+        <ul>
+          <li>ATV</li>
+          <li>UTV</li>
+          <li>Snowmobiles</li>
+        </ul>
+      </div>
+      <div class="market-card">
+       
+        <img src="file/v5.png" alt="Active Chromewell Logo" class="brand-logo">
+        <h4>Industrials</h4>
+        <ul>
+          <li>Material Handling — Fork Lifts</li>
+          <li>Power Generation — Diesel &amp; Petrol Gensets</li>
+          <li>Pumps &amp; Compressors</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="section dark" id="capabilities">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div>
+        <span class="doc-tag" style="color:#86B832;">CAPABILITIES &amp; SERVICES</span>
+        <h2 style="color:#86B832;">One stop shop,<br>Tier 1 delivery.</h2>
+      </div>
+      <p>Customized engineering and testing for exhaust and emissions requirements, alongside specialized world-class manufacturing — robotic automation, surface finishing and logistics management. Our high-temperature powder paint, formulated with a custom silicon/zinc compound, passes extended salt-spray testing.</p>
+    </div>
+
+    <div class="cap-block reveal">
+      <div class="cap-label">
+        <span class="doc-tag" style="color:#86B832;">01</span>
+        <h3 style="color:#86B832;">Experienced &amp; Established<br>Tier 1 Supplier</h3>
+      </div>
+      <ul class="cap-list">
+        <li><b>Complete exhaust systems</b> — spark-ignited &amp; diesel engine applications</li>
+        <li><b>Off-road, mobile &amp; stationary</b> — from 5 to 700+ HP</li>
+        <li><b>Sound, performance &amp; thermal</b> optimization</li>
+        <li><b>Emission management</b> for diesel &amp; SSI engines</li>
+        <li><b>USDA spark arrestor</b> tech, certified testing</li>
+        <li><b>Thermal management</b> — Tier IV system integration</li>
+        <li><b>Double-wall &amp; insulated</b> tubing</li>
+        <li><b>CAC &amp; air intake</b> tubing</li>
+      </ul>
+    </div>
+
+    <div class="cap-block reveal">
+      <div class="cap-label">
+        <span class="doc-tag" style="color:#86B832;">02</span>
+        <h3 style="color:#86B832;">Design &amp; Engineering</h3>
+      </div>
+      <ul class="cap-list">
+        <li><b>1,200+</b> exhaust system designs produced by Active Exhaust</li>
+        <li><b>Integrated CAD</b> design</li>
+        <li><b>Dynamic &amp; structural</b> Finite Element Analysis (FEA)</li>
+        <li><b>Emission, thermal &amp; acoustic</b> simulations</li>
+        <li><b>Computational Fluid Dynamics</b> (CFD)</li>
+        <li><b>Value Analysis</b> / Value Engineering</li>
+      </ul>
+    </div>
+
+    <div class="cap-block reveal">
+      <div class="cap-label">
+        <span class="doc-tag" style="color:#86B832;">03</span>
+        <h3 style="color:#86B832;">Testing</h3>
+      </div>
+      <ul class="cap-list">
+        <li><b>5 independent</b> eddy current dynamometer cells</li>
+        <li><b>Semi-anechoic</b> sound chambers, B&amp;K sound meter</li>
+        <li><b>Infrared camera</b> (FLIR A40)</li>
+        <li><b>Emission bench</b> — NOx, CO, THC, CO2 &amp; O2, CFR Part 1065 compliant</li>
+        <li><b>Superflow</b> flow-bench</li>
+        <li><b>Vibration &amp; Maha</b> particulate measurement</li>
+      </ul>
+    </div>
+
+    <div class="cap-block reveal">
+      <div class="cap-label">
+        <span class="doc-tag" style="color:#86B832;">04</span>
+        <h3 style="color:#86B832;">Manufacturing</h3>
+        <span class="onestop">One Stop Shop — Simple to Complex, High &amp; Low Volume</span>
+      </div>
+      <ul class="cap-list">
+        <li><b>CNC</b> tube bending &amp; perforation</li>
+        <li><b>NC</b> tube bending &amp; rolling</li>
+        <li><b>Stamping</b></li>
+        <li><b>MIG / TIG</b> welding stations</li>
+        <li><b>Robotic &amp; semi-automatic</b> welding SPMs</li>
+        <li><b>Resistance welding</b> machines</li>
+        <li><b>High-temp powder paint</b> capability</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POLICIES ============ -->
+<section class="section" id="policies">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div>
+        <span class="doc-tag">POLICIES</span>
+        <h2>What we stand<br>behind.</h2>
+      </div>
+      <p>Certified manufacturing discipline, built into every process — from raw material intake to final inspection.</p>
+    </div>
+    <div class="policy-grid reveal">
+      <div class="policy-card">
+        <span class="doc-tag">QUALITY POLICY</span>
+        <h3>Right first time, every time</h3>
+        <p>Active Chromewell Exhaust is committed to delivering products that meet or exceed customer and regulatory requirements, operating to ISO 9001 and TS 16949 standards across design, manufacturing and testing. We drive continual improvement through employee involvement, process control and data-driven decision making.</p>
+      </div>
+      <div class="policy-card">
+        <span class="doc-tag">ENVIRONMENTAL POLICY</span>
+        <h3>Responsible manufacturing</h3>
+        <p>We minimize environmental impact through efficient use of materials and energy, responsible waste management and compliance with applicable environmental regulations across our global facilities in North America, China and India.</p>
+      </div>
+      <div class="policy-card">
+        <span class="doc-tag">HEALTH &amp; SAFETY POLICY</span>
+        <h3>Safety on the shop floor</h3>
+        <p>The safety of our people comes first. We maintain rigorous workplace safety standards, regular training and protective protocols across welding, fabrication, testing and finishing operations.</p>
+      </div>
+      <div class="policy-card">
+        <span class="doc-tag">SUPPLIER &amp; ETHICS POLICY</span>
+        <h3>Integrity through the supply chain</h3>
+        <p>We hold ourselves and our supply partners to a standard of integrity, fair dealing and respect — building long-term relationships with customers and suppliers on trust and consistent performance.</p>
+      </div>
+    </div>
+    <div class="cert-row reveal">
+      <span class="cert-chip">ISO 9001 Certified</span>
+      <span class="cert-chip">TS 16949 Certified</span>
+      <span class="cert-chip">OEM Certified Facilities</span>
+      <span class="cert-chip">CFR Part 1065 Compliant Testing</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section dark" id="contact">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div>
+        <span class="doc-tag" style="color:#86B832;">CONTACT</span>
+        <h2 style="color:#86B832;">Let's engineer<br>your next system.</h2>
+      </div>
+      <p>All fields marked required. Choose a department and we'll route your inquiry to the right team.</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="block">
+          <span class="doc-tag" style="color:#86B832;">OFFICE ADDRESS</span>
+          <p>Gat No. 1224/2, Sanaswadi, Pune Nagar Road, Tal-Shirur, Pune 412208 (MH), INDIA</p>
+        </div>
+        <div class="block">
+          <span class="doc-tag" style="color:#86B832;">MARKETING OFFICE</span>
+          <p>Office No. 267 &amp; 268, B-Wing, 2nd Floor, Jai Ganesh Vision, Akurdi, Pune, MH, INDIA – 411035</p>
+        </div>
+        <div class="block">
+          <h4>Factory Numbers</h4>
+          <a href="tel:+912138673413">+91 2138 673 413 / 25</a>
+        </div>
+        <div class="block">
+          <h4>Marketing Office</h4>
+          <a href="tel:+917304820651">+91 7304 820 651 / 648</a>
+        </div>
+        <div class="block">
+          <h4>Email</h4>
+          <a href="mailto:bdm@activechromewell.com">bdm@activechromewell.com</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">Full Name *</label>
+            <input id="fname" name="name" type="text" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="femail">Email *</label>
+            <input id="femail" name="email" type="email" required placeholder="you@company.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="fphone">Phone</label>
+            <input id="fphone" name="phone" type="tel" placeholder="+91 ...">
+          </div>
+          <div class="field">
+            <label for="fdept">Department *</label>
+            <select id="fdept" name="department" required>
+              <option value="">Select department</option>
+              <option>General Inquiry</option>
+              <option>Sales</option>
+              <option>Human Resources</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fmsg">Message *</label>
+          <textarea id="fmsg" name="message" required placeholder="Tell us about your project or requirement"></textarea>
+        </div>
+        <button type="submit" class="btn solid">Submit
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <div class="form-status" id="formStatus"></div>
+        <p class="form-note">Submitting opens your email client addressed to bdm@activechromewell.com with your message pre-filled.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand" style="max-width:320px;">
+<div class="brand">
+  <!-- Logo PNG -->
+  <img src="file/logo.png" alt="Active Chromewell Logo" class="brand-logo">
+  
+  <div class="brand-text-container">
+    <!-- Brand Name -->
+    <!---<span class="brand-text"><b>Active Chromewell</b> <span>Exhaust Pvt Ltd</span></span>--->
+    <!-- Tagline PNG -->
+    <!--<img src="tagline.jpg" alt="Active Chromewell Tagline" class="brand-tagline">-->
+  </div>
+</div>
+        <p>World-class exhaust, emissions and thermal management solutions — engineered in India, backed by 50+ years of North American exhaust expertise.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Navigate</h5>
+          <a href="#about">About Us</a>
+          <a href="#products">Products</a>
+          <a href="#markets">Markets</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#policies">Policies</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="foot-col">
+          <h5>Group</h5>
+          <a href="http://www.activeexhaust.com/" target="_blank" rel="noopener">Active Exhaust Corp.</a>
+          <a href="http://www.chromewell.in/" target="_blank" rel="noopener">Chromewell Engineering</a>
+        </div>
+        <div class="foot-col">
+          <h5>Contact</h5>
+          <span>Sanaswadi, Pune, MH, India</span>
+          <a href="mailto:bdm@activechromewell.com">bdm@activechromewell.com</a>
+          <a href="tel:+912138673413">+91 2138 673 413</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Active Chromewell Exhaust Pvt Ltd. All rights reserved.</span>
+      <span>ISO 9001 · TS 16949 Certified</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---- client marquee ----
+const clients = ["Kubota","Active Exhaust","Polaris","Wacker Neuson","Club Car","Doosan","Toro","CNH","CAT","Carraro","Force Motors","Liugong","Ajax Fiori","John Deere"];
+const track = document.getElementById('marquee-track');
+const doubled = clients.concat(clients);
+track.innerHTML = doubled.map(c => `<span>${c}</span>`).join('');
+
+// ---- sparks ----
+const field = document.getElementById('sparkfield');
+for(let i=0;i<22;i++){
+  const s = document.createElement('div');
+  s.className = 'spark';
+  s.style.left = (55 + Math.random()*40) + '%';
+  s.style.bottom = (10 + Math.random()*20) + '%';
+  s.style.setProperty('--drift', (Math.random()*80-40)+'px');
+  s.style.animationDuration = (2.5 + Math.random()*3) + 's';
+  s.style.animationDelay = (Math.random()*4) + 's';
+  field.appendChild(s);
+}
+
+// ---- reveal on scroll ----
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// ---- mobile nav ----
+document.querySelectorAll('nav.links a').forEach(a=>a.addEventListener('click',()=>{
+  document.querySelector('nav.links').classList.remove('open');
+}));
+
+// ---- contact form -> mailto ----
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = this.name.value, email = this.email.value, phone = this.phone.value || '—';
+  const dept = this.department.value, msg = this.message.value;
+  const subject = encodeURIComponent(`Website Inquiry — ${dept}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nDepartment: ${dept}\n\nMessage:\n${msg}`);
+  window.location.href = `mailto:bdm@activechromewell.com?subject=${subject}&body=${body}`;
+  const status = document.getElementById('formStatus');
+  status.style.display = 'block';
+  status.textContent = 'Opening your email client…';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://activechromewell.com/sitemap.xml
