@@ -1,0 +1,19 @@
+.ipWidget-AsdSlider .text-center {
+    text-align: center;
+}
+.ipWidget-AsdSlider .hide {
+    display: none;
+}
+.ipWidget-AsdSlider .empty-slider {
+    padding: 30px;
+    background-color: #F1F1F1;
+}
+
+.ipWidget-AsdSlider .ipsItem img,
+.ipWidget-AsdSlider .ipsItem {
+    width: 100%;
+}
+
+#ipWidgetAsdSliderControls {
+    z-index: 1050;
+}
