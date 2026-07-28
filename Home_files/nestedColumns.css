@@ -1,0 +1,21 @@
+.ipWidget-NestedColumns ._nestedContainer {
+    margin: 0 -10px;
+}
+.ipWidget-NestedColumns ._nestedCol {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.ipWidget-NestedColumns > .ip > .ipAdminWidgetControls > ._controls {
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+body{
+    background: red;
+}
