@@ -1,0 +1,14 @@
+.ipHybridauthContainer{
+    clear: both;
+    float: none;
+}
+
+.ipHybridauth ._button{
+    float: left;
+    padding: 3px
+}
+
+.ipWidget-HybridAuth ._note{
+    padding: 20px;
+    margin-bottom: 20px;
+}
