@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="Markets_files/jquery_008.js"></script>
+    <script src="Markets_files/bootstrap.js"></script>
+    
+    <title>Sustainability &amp; GHG Reports 2025-26</title>
+    <link rel="shortcut icon" href="https://www.activechromewell.com/favicon.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="TheOrangeWebMedia">
+    <link href="Markets_files/colorbox.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/jquery.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/jquery_003.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/style_002.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/accordionAndTabs.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/hybridauth.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/nestedColumns.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/jquery_002.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/style.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/slicknav.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/reset.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/responsive.css" rel="stylesheet" type="text/css">
+    <link href="Markets_files/flexisel-style.css" rel="stylesheet" type="text/css">
+    			<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="icon" href="favicon.png" type="image/x-icon">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style>
+        #ipBlock-nested11396_1_{
+            background:url('http://localhost/WebBuilder/core/file/repository/header_bg.jpg');
+            height:500px;
+            width:100%;
+        }
+
+        /* --- Report Cover Layout Styles --- */
+        .report-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 15px;
+            background-color: #f0f2f5;
+        }
+
+        /* PDF Action Button Container */
+        .pdf-action-container {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .view-pdf-btn {
+            background-color: #364461;
+            color: #ffffff;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .view-pdf-btn:hover {
+            background-color: #64b54f;
+            color: #ffffff;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        .cover-container {
+            width: 100%;
+            max-width: 800px;
+            height: 1000px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-section {
+            flex: 1;
+            position: relative;
+            background-image: url('bg.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .image-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+            z-index: 1;
+        }
+
+        .info-section {
+            height: 400px;
+            display: flex;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .left-bar {
+            width: 30%;
+            background-color: #91c73e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .year-text {
+            color: white;
+            font-size: 64px;
+            font-weight: bold;
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            letter-spacing: 2px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .details-panel {
+            width: 70%;
+            background-color: #364461;
+            color: white;
+            padding: 50px 40px 30px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .report-title {
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .report-date {
+            font-size: 22px;
+            font-style: italic;
+            font-family: Georgia, serif;
+            color: #e1e7f0;
+        }
+
+        .address-footer {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #cbd5e1;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Mobile Breakpoint Modifications */
+        @media screen and (max-width: 767px) {
+            .pdf-action-container {
+                justify-content: center;
+            }
+            .view-pdf-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .cover-container {
+                height: auto; /* Allow flexible dynamic sizing on small devices */
+                min-height: 750px;
+            }
+            .image-section {
+                min-height: 350px;
+            }
+            .info-section {
+                flex-direction: column;
+                height: auto;
+            }
+            .left-bar {
+                width: 100%;
+                padding: 20px 0;
+            }
+            .year-text {
+                transform: none; /* Straight horizontal orientation for text layout comfort */
+                font-size: 44px;
+            }
+            .details-panel {
+                width: 100%;
+                padding: 35px 25px;
+                gap: 40px;
+            }
+            .report-title {
+                font-size: 32px;
+            }
+            .report-date {
+                font-size: 18px;
+            }
+        }
+    </style> 
+</head>
+<body>
+    
+<div id="ipBlock-t1_blank_block1" data-revisionid="510" data-languageid="0" class="ipBlock">
+    <div class="ipWidget ipWidget-Html ipSkin-default">
+        <link href="Markets_files/css.css" rel="stylesheet"> 
+
+        <style>
+            body{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                font-size: 15px;
+                color: #747474;
+            }
+
+            .logo{
+                width:65%;
+                float:left;
+            }
+
+            .logo2{
+                width:65%;
+                float:right;
+            }
+            .my-nav{
+                border-bottom:1px #e5e5e5 solid;
+                border-top:1px #e5e5e5 solid;
+            }
+            .pluginNav li{
+                padding:0px 20px;
+            }
+            .pluginNav li a{
+                padding:12px ;
+            }
+            .pluginNav a:hover {
+                color: #64b54f;
+                border-top: 3px #64b54f solid;
+            }
+
+            #top-phone{
+                float:right;
+                margin-top:10px;
+            }
+
+            #top-phone li{
+                display:inline;
+                list-style:none;
+                margin-left:15px;
+            }
+
+            #top-phone span{
+                margin-left:5px;
+            }
+
+            #effect{
+                background:#85C227;
+                border:none;
+                outline:0;
+                box-shadow:0;
+                transition:all 0.8s;
+                cursor:pointer;
+                color:#fff;
+            }
+            #effect:before,#effect:after {
+                content:"";
+                position:absolute;
+                height:0;
+                width:0;
+                border:0px solid #85C227;
+            }
+            #effect:before {
+                top:0px;
+                right:0px;
+            }
+            #effect:after {
+                bottom:0px;
+                left:0px;
+            }
+            #effect:hover:before, #effect:hover:after {
+                width:100%;
+                height:100%;
+                border:2px solid #85C227;
+                color:#000;
+            }
+            #effect:hover:before {
+                border-bottom-color:transparent;
+                border-right-color:transparent;
+                transition: width 0.4s 0s, height 0.4s 0.4s;
+            }
+            #effect:hover:after {
+                border-top-color:transparent;
+                border-left-color:transparent;
+                transition: width 0.4s 0.8s, height 0.4s 1.2s, border 0s 0.8s;
+            }
+            #effect:hover {
+                background:transparent;
+                color:#85C227;
+                padding:10px;
+            }
+            .market .col-md-6{ padding:0px; }
+            .market .col-md-8{ padding:0px; }
+            .market .col-md-4{ padding:0px; }
+        </style>
+    </div>
+
+    <div class="ipWidget ipWidget-Html ipSkin-default"><br><br></div>
+
+    <!-- Branding Headers -->
+    <div class="ipWidget ipWidget-DroppableWrapper ipSkin-default">
+        <div class="container">
+            <div class="col-md-12">
+                <div id="ipBlock-nested27694_1_" data-revisionid="510" data-languageid="0" class="ipBlock">
+                    <div class="ipWidget ipWidget-TwoGrid ipSkin-default">
+                        <div class="col-md-6">
+                            <div id="ipBlock-nested27673_1_" data-revisionid="510" data-languageid="0" class="ipBlock">
+                                <div class="ipWidget ipWidget-Html ipSkin-default">
+                                    <img src="Markets_files/logo1_2.png" class="logo">
+                                </div>
+                            </div>
+                        </div>	
+
+                        <div class="col-md-6">
+                            <div id="ipBlock-nested27673_1_1" data-revisionid="510" data-languageid="0" class="ipBlock">
+                                <div class="ipWidget ipWidget-Html ipSkin-default">
+                                    <img src="Markets_files/tagline_2.jpg" class="logo2">
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ipWidget ipWidget-Html ipSkin-default"><br><br></div>
+    <div class="ipWidget ipWidget-Html ipSkin-default"><div class="clearfix"></div></div>
+    
+    <!-- Navigation Bar Menu -->
+    <div class="ipWidget ipWidget-GridWidget ipSkin-default">
+        <div class="col-md-12 my-nav" style="margin:0px; background: url('') no-repeat center center; background-size:cover; background-attachment:fixed;">
+            <div id="ipBlock-117127163010924" data-revisionid="510" data-languageid="0" class="ipBlock">
+                <div class="ipWidget ipWidget-TwoEightTwo ipSkin-default">
+                    <div class="col-md-2">
+                        <div id="ipBlock-nested27669_1_" data-revisionid="510" data-languageid="0" class="ipBlock">
+                            <div class="ipWidget ipWidget-Html ipSkin-default"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div id="ipBlock-nested27669_1_1" data-revisionid="510" data-languageid="0" class="ipBlock">
+                            <div class="ipWidget ipWidget-Menu ipSkin-default">
+                                <style>
+                                    .pluginNav{ margin:0px; }
+                                    .pluginNav a{
+                                        color:#333333;
+                                        text-decoration:none;
+                                        display:block;
+                                        font-size:14px;
+                                    }
+                                    .pluginNav a:hover{ color:#64b54f; }
+                                    .repNav{
+                                        display:block;
+                                        width:100%;
+                                        color:#333333;
+                                        text-align: center;
+                                        cursor:pointer;
+                                        display:none;
+                                    }
+                                    .pluginNav li{
+                                        margin: 0 auto;
+                                        float:left;
+                                        transition: all 0.5s ease;
+                                        position:relative;    
+                                        text-align:center;
+                                        list-style:none;
+                                    }
+                                    .pluginNav li ul{
+                                        display: none;
+                                        left: 0;
+                                        position: absolute;
+                                        text-align: center;
+                                        top: 0px;
+                                        width: 100%;
+                                        transition: all 0.5s ease;      
+                                        z-index:99999999;
+                                    }
+                                    .pluginNav li ul li ul{
+                                        display: none;
+                                        left: 100%;
+                                        position: absolute;
+                                        text-align: center;
+                                        top: 0px;
+                                        transition: all 0.5s ease;      
+                                        width: 100%;
+                                        z-index:99999999;
+                                    }
+                                    .pluginNav li ul li{
+                                        list-style:none;
+                                        width:100%;
+                                    }
+                                    .pluginNav li:hover ul.level2{ display: block; }
+                                    .pluginNav li ul li:hover ul.level3{ display: block; }
+                                    .pluginNav li ul li a{ border: none; }
+                                    
+                                    @media screen and (max-width: 800px) {
+                                        .pluginNav{ width:100%; display:none; }
+                                        .pluginNav li{ width:100%; margin:0px; }
+                                        .repNav{ display:block; }
+                                        .pluginNav li ul{ position: relative; }
+                                    }
+.footer {
+
+   left: 0;
+   bottom: 0;
+   
+   background-color: #86B832;
+   color: white;
+   text-align: center;
+}
+                                </style>
+
+                                <script>
+                                    $(document).ready(function(e){
+                                       $(".repNav").on("click",function(e){
+                                          $(".pluginNav").toggle("show");
+                                       });
+                                    });
+                                </script>
+
+                                <div class="repNav">MENU</div>
+
+                                <ul class="level1 pluginNav">
+                                    <li><a href="index.html" title="Home">Home</a></li>
+                                    <li><a href="About Us.html" title="About Us">About Us</a></li>
+                                    <li><a href="Products.html" title="Products">Products</a></li>
+                                    <li><a href="Markets.html" title="Markets">Markets</a></li>
+                                    <li><a href="Capabilities.html" title="Capabilities">Capabilities</a></li>
+                                    <li class="active"><a href="Sustainability.html" title="Sustainability">Sustainability</a></li>
+                                    <li><a href="Contact.html" title="Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div id="ipBlock-nested27669_1_2" data-revisionid="510" data-languageid="0" class="ipBlock">
+                            <div class="ipWidget ipWidget-Html ipSkin-default"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ipWidget ipWidget-Html ipSkin-default"><div class="clearfix"></div></div>
+    <div class="ipWidget ipWidget-Html ipSkin-default"><div class="clearfix"></div></div>
+
+    <!-- Sustainability and GHG Reports: FY 2025-26 -->
+    <style>
+        .reports-section { background:#f0f2f5; padding:42px 20px 50px; }
+        .reports-heading { max-width:1200px; margin:0 auto 28px; text-align:center; color:#364461; }
+        .reports-heading h1 { font-size:32px; margin:0 0 8px; font-weight:700; }
+        .reports-heading p { margin:0; letter-spacing:.2px; }
+        .reports-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
+        .report-card { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.10); display:flex; flex-direction:column; min-width:0; }
+        .report-card-banner { min-height:210px; background:linear-gradient(135deg,#364461,#1f2d45); color:#fff; padding:30px; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
+        .report-card-banner:after { content:""; position:absolute; width:170px; height:170px; right:-28px; top:-38px; border:24px solid rgba(255,255,255,.08); border-radius:50%; }
+        .report-type { font-size:13px; text-transform:uppercase; letter-spacing:2px; color:#d9e4f3; }
+        .report-year { font-size:48px; line-height:1; font-weight:700; margin-top:18px; }
+        .report-card-body { padding:26px 30px 30px; display:flex; flex-direction:column; flex:1; }
+        .report-card-body h2 { color:#364461; font-size:24px; line-height:1.3; margin:0 0 12px; }
+        .report-card-body p { color:#626b78; margin:0 0 24px; letter-spacing:.1px; }
+        .report-pdf-btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; margin-top:auto; padding:13px 18px; border-radius:4px; background:#364461; color:#fff; text-decoration:none; font-weight:700; transition:background .2s ease; }
+        .report-pdf-btn:hover,.report-pdf-btn:focus { background:#64b54f; color:#fff; text-decoration:none; }
+        .report-pdf-btn .fa { color:#fff; }
+        .report-address { max-width:1200px; margin:26px auto 0; text-align:center; color:#747474; font-size:12px; }
+        @media(max-width:767px) { .reports-section{padding:28px 14px 35px;} .reports-heading h1{font-size:26px;} .reports-grid{grid-template-columns:1fr;gap:20px;} .report-card-banner{min-height:170px;padding:24px;} .report-year{font-size:40px;} .report-card-body{padding:22px;} .report-card-body h2{font-size:21px;} }
+    </style>
+
+    <section class="reports-section" aria-labelledby="reports-heading">
+        <div class="reports-heading">
+            <h1 id="reports-heading">Sustainability &amp; GHG Reports</h1>
+            <p>Financial Year 2025–26</p>
+        </div>
+
+        <div class="reports-grid">
+            <article class="report-card">
+                <div class="report-card-banner">
+                    <span class="report-type">Annual Report</span>
+                    <div class="report-year">2025–26</div>
+                </div>
+                <div class="report-card-body">
+                    <h2>Sustainability Report</h2>
+                    <p>Read the annual sustainability report for the financial year 2025–26.</p>
+                    <a class="report-pdf-btn" href="Sustainability_Report_2025-26.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Sustainability Report 2025-26 PDF">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> View Sustainability Report PDF
+                    </a>
+                </div>
+            </article>
+
+            <article class="report-card">
+                <div class="report-card-banner">
+                    <span class="report-type">Emissions Report</span>
+                    <div class="report-year">2025–26</div>
+                </div>
+                <div class="report-card-body">
+                    <h2>GHG Emissions Accounting Report</h2>
+                    <p>Access the Greenhouse Gas (GHG) emissions accounting report for the financial year 2025–26.</p>
+                    <a class="report-pdf-btn" href="GHG_Emissions_Accounting_Report_2025-26.pdf" target="_blank" rel="noopener noreferrer" aria-label="View GHG Emissions Accounting Report 2025-26 PDF">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> View GHG Emissions Report PDF
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="report-address">GAT No-1224/2, Sanaswadi Taluka Shirur, Pune, Maharashtra 412208, India</div>
+    </section>
+
+<div class="footer">
+      <p>© 2026 Active Chromewell Exhaust Pvt Ltd. All rights reserved.</p>
+ </div>
+<style>
+
+</style>
+</body>
+</html>
